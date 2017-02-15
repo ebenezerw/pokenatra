@@ -7,3 +7,8 @@
 </div>
 
 <a href='/pokemons/<%= @pokemon.id %>/edit'>Edit This Pokemon</a>
+<p>
+<form action="/pokemons/<%= @pokemon.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input class="button-delete" type="submit" value="Delete!">
+</form>
